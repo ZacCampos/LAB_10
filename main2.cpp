@@ -40,16 +40,17 @@ int main()
 	 **************************************************************************/
 
 	const char PROGRAMMERS[] = "Zac Campos & Bryce Hunt";
-	const char CLASS[]		= "CS1A";
-	const char SECTION[]	= "MW: 8am";
-	const int  LAB_NUM		= 10;
-	const char LAB_NAME[]	= "Intro to Programming";
-	// variable declarations go here
+	const char CLASS[]		 = "CS1A";
+	const char SECTION[]	 = "MW: 8am";
+	const int  LAB_NUM		 = 10;
+	const char LAB_NAME[]	 = "Intro to Programming";
+
+	// Variables
 	int firstNum;		// IN, CALC & OUT - first value to sum
 
 	int secondNum;		// IN, CALC & OUT - second value to sum
 
-	int sum = 0;		// CALC & OUT	  - sum of 2 integers input
+	int 	sum	 = 0;	// CALC & OUT	  - sum of 2 integers input
 
 	float average = 0;  // CALC & OUT	  - average of 2 integers input
 
@@ -70,11 +71,11 @@ int main()
 	cin	 >> firstNum;
 
 	cout << "Enter the second integer: ";
-	cin >> secondNum;
+	cin  >> secondNum;
 	/***************************************************************************
 	 * PROCESSING - Calculates the sum & average of the two inputs
 	 **************************************************************************/
-	sum = firstNum + secondNum;
+	sum 	= firstNum + secondNum;
 
 	average = (firstNum + secondNum) / 2.0;
 	/***************************************************************************
@@ -83,7 +84,7 @@ int main()
 	 * 	For example, if firstNum = 32 & secondNum = 41 output will be:
 	 * 		  32 + 41 = 73
 	 **************************************************************************/
-	cout << endl << firstNum << " + " << secondNum << " = " << sum << endl;
+	cout << endl  << firstNum  << " + "   << secondNum << " = " << sum << endl;
 	cout << fixed << setprecision(2);
 	cout << "The average is: " << average << endl;
 	return 0;
